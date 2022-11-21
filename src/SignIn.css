@@ -1,0 +1,76 @@
+
+.headS{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 500px;
+    display : flex;
+    justify-content: center;
+    align-items :center;
+    flex-direction: column;
+}
+
+.fullPage{
+    height : 100vh;
+    width : 100%;
+    background-image : url("signinBg.png");
+    display : flex;
+    justify-content: center;
+    align-items :center;
+    flex-direction: column;
+}
+.bigBox{
+    height:350px;
+    width : 700px;
+    display: flex;
+    flex-direction: row;;
+    border : 10px solid  antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
+}
+.heading{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    margin : 8px;
+    color: rgb(0, 0, 0);
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    height : 23px;
+    width : 150px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius:2px;
+    margin: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img1{
+    height : 350px;
+    width:300px;
+    background-image : url("https://img.freepik.com/free-vector/sign-page-abstract-concept-illustration_335657-2242.jpg?w=2000");
+    background-repeat: no-repeat;
+    position : relative;
+    top : 0px;
+    left : -15px;  
+}
+
+.formBox{
+    display : flex;
+    justify-content: center;
+    align-items :center;
+    flex-direction: column;
+}
+.submitButton{
+    height : 27px;
+    width : 100px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius:5px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    color:antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+
+}
