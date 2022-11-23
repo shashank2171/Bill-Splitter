@@ -9,7 +9,9 @@ import Expense from "./Expense";
 import AddExpense from "./AddExpense"
 
 
+
 const App = () =>{
+    
     return(
         <>
         <BrowserRouter>
@@ -69,6 +71,5 @@ const App = () =>{
 // })
 
 // // mongodb+srv://harshtripathi:<password>@cluster0.9l2uegx.mongodb.net/?retryWrites=true&w=majority
-
 
 export default App;

@@ -3,10 +3,14 @@ import Header from "./Header";
 import "./index.css";
 import "./Expense.css";
 import "./SignIn.css";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import {auth} from "./firebase";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import {auth, updateUserDatabase} from "./firebase";
+import { useNavigate } from "react-router-dom"
 
 const SignIn=()=>{
+
+    const navigate = useNavigate();
+
     const[fullName,setFullName] = useState({
         fname : "",
         lname : "",
@@ -36,9 +40,23 @@ const SignIn=()=>{
         else{
             console.log(fullName);
             createUserWithEmailAndPassword(auth, fullName.email, fullName.password)
-                .then((res)=>{
-                    alert("Profile created")
-                    console.log(res);
+                .then(async(res)=>{
+                    const user = res.user;
+                    console.log(user);
+                    await updateProfile(user, {
+                        displayName: fullName.fname+" "+fullName.lname,
+                    });
+
+                    const userId = res.user.email;
+                    await updateUserDatabase(
+                        {name: fullName.fname+" "+fullName.lname},
+                        userId
+                    );
+
+                    //alert("Profile created")
+                    //console.log(res);
+
+                    navigate("/Groups")
                 })
                 .catch((err)=> {
                     alert(err.message);

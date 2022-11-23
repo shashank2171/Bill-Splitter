@@ -20,8 +20,9 @@
 }
 .outerBox3{
     height : 60vh;
-    width : 70vw;
+    width : 30vw;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     border : 5px solid rgb(252, 227, 195);
     border-radius: 10px;
@@ -30,16 +31,15 @@
 
 
 .boxE1{
-    height : 350px;
+    height : 300px;
     width : 100%;
     display: flex;
     flex-direction: column;
-    justify-content :flex-start;
-    align-items :flex-start;
-    margin : 20px 0px 0px 20px;
+    justify-content :center;
+    align-items :center;
     padding : 20px 0px 0px 0px;
 }
-.boxE2{
+/* .boxE2{
     border-left: .2px solid black;
     height : 350px;
     width : 100%;
@@ -49,7 +49,7 @@
     align-items :flex-start;
     margin : 20px 0px 0px 0px;
     padding : 0px 0px 0px 20px;
-}
+} */
 
 .addBtn2{
     height : 25px;

@@ -6,10 +6,10 @@ import "./AddExpense.css";
 
 const AddExpense = () =>{
     const[fullName,setFullName] = useState({
-        gname : " ",
-        description : " ",
-        mname : " ",
-        mmail : " ",
+        gname : "",
+        description : "",
+        mname : "",
+        mmail : "",
     });
 
 
@@ -35,16 +35,16 @@ const AddExpense = () =>{
         <div className="fullBills">
         <h1 className="head5">BillS</h1>
         <div className="outerBox4">
-            <div className="box4">
-                <h2 className="heading3">Settled Bills</h2> </div>    
+            {/* <div className="box4">
+                <h2 className="heading3">Settled Bills</h2> </div>     */}
             <div className="box5">
             <h2 className="heading3">Active Bills</h2> 
-        <button className="addBtn3"><NavLink to="/Groups/AddGroups/Expense">Settle</NavLink></button>
+        {/* <button className="addBtn3"><NavLink to="/Groups/AddGroups/Expense">Settle</NavLink></button> */}
         </div>
         </div>
         
         </div>
         </>
     );
-}
+            }
 export default AddExpense;

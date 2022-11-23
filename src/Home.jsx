@@ -13,7 +13,7 @@ const Home = () =>{
     </div>
     <div className="content">
         <div className = "imageBox">
-    <img src = "https://img.freepik.com/free-vector/hand-drawn-group-people-background-composition_23-2149196877.jpg?w=2000" alt ="image" className="image1"/>
+    <img src = "https://img.freepik.com/free-vector/hand-drawn-group-people-background-composition_23-2149196877.jpg?w=2000" alt ="" className="image1"/>
     </div>
     <div className="para">
     The frequent issues users have with sharing among themselves gave rise to the idea for creating this application. Maintaining personal spending is a huge concern, and dividing expenses across the group might be perplexing. Before, there were several ways to keep track of expenses, including the use of sticky notes by regular people, spreadsheets for professionals, and ledgers for keeping track of large sums. There are still issues with data consistency, the possibility of missing important inputs, and the potential for human mistake. Data recorders are not always readily available, and getting a comprehensive picture of those charges might be time-consuming.

@@ -25,9 +25,13 @@
 }
 .outerBox4{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+    border : 1px solid antiquewhite;
+    border-radius: 10px;
 }
-
+/* 
 .box4{
     height : 58vh;
     width : 24vw;
@@ -40,7 +44,7 @@
     position : absolute;
     top : 170px;
     left : 120px;
-}
+} */
 .box5{
     height : 58vh;
     width : 24vw;
@@ -50,9 +54,9 @@
     border : 5px solid antiquewhite;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
-    position : absolute;
+    /* position : absolute;
     top : 170px;
-    right : 120px;
+    right : 120px; */
 }
 
 
@@ -68,8 +72,8 @@
     justify-content: center;
     border : 2px solid black;
     border-radius: 5px;
-    position : absolute;
+    /* position : absolute;
     top : 330px;
     right : 100px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.5); */
 }

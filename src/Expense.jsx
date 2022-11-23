@@ -3,44 +3,52 @@ import Header from "./Header";
 import "./index.css";
 import "./Expense.css";
 import { NavLink } from "react-router-dom";
+import { collection, doc, setDoc, getDoc, updateDoc } from "firebase/firestore"; 
+import {db} from "./firebase"
+import {group, currUser} from "./AddGroups"
 
 const Expense = () =>{
 
     
     const[fullName,setFullName] = useState({
-        gname : " ",
-        description : " ",
-        mname : " ",
-        mmail : " ",
+        amount : "",
+        description : "",
     });
 
 
     const inputEvent=(event)=>{
-        console.log(event.target.value);
-        console.log(event.target.name);
-
+       
         const{name, value} = event.target;
         
         setFullName((preValue) =>{
 
-            console.log(preValue);
+            //console.log(preValue);
             return{
                 ...preValue,
                 [name] : value,
             };
         });
-        };
+    };
 
-        const onSubmits=(event)=>{
-            event.preventDefault();
-            alert("form Submitted");
-        };
+    const onSubmits=async(event)=>{
+        event.preventDefault();
+
+        const exp = doc(db,"users", currUser.email, "groups", group, "expenses", fullName.description);
+        await setDoc(exp, {
+            amount: fullName.amount
+        });
+
+       
+        console.log(fullName);
+        console.log(group);
+        alert("form Submitted");
+    };
 
     return(
         <>
         <Header/>
         <div className="fullPage3">
-        <h1 className="head1">Group Name</h1>
+        <h1 className="head1">{group}</h1>
         <div className="outerBox3">
             <div className="boxE1">
             
@@ -49,11 +57,11 @@ const Expense = () =>{
                         <div className="formBox">   
                         <h3 className="heading">Amount</h3>
                         <input 
-                        type="text" 
-                        placeholder="Group Name " 
-                        name="gname"
+                        type="number" 
+                        placeholder="  Enter Amount " 
+                        name="amount"
                         onChange={inputEvent} 
-                        value={fullName.gname} 
+                        value={fullName.amount} 
                         className="box"/>
 
                         <h3 className="heading">Description</h3>
@@ -68,10 +76,10 @@ const Expense = () =>{
                         </div>
                     </form>
                 </div>
-                <button className="addBtn2"><NavLink to="/Groups/AddGroups/Expense/AddExpense">Add Expense</NavLink></button>
+                <button className="addBtn2" onClick={onSubmits}>Add Expense</button>
                 <h3 className="heading6">Expenses List</h3>
             </div>
-            <div className="boxE2">
+            {/* <div className="boxE2">
             <div className="head">
                         <h3 className="heading">Add Member</h3>
                         <input 
@@ -92,7 +100,7 @@ const Expense = () =>{
                         </div>
 
                         <h3 className="heading5">Members List</h3>
-            </div>
+            </div> */}
         </div>
         </div>
         </>
