@@ -45,7 +45,7 @@ const LogIn=()=>{
                     //alert("Login Successful")
                     //console.log(res);
 
-                    navigate("/Groups")
+                    navigate("/Groups");
                 })
                 .catch((err)=> {
                     alert(err.message);
@@ -62,7 +62,7 @@ const LogIn=()=>{
         <div className="headS">
             <form onSubmit={onSubmits}>
             <div className="formBox">   
-            <h1 className="heading">Enter Credentials</h1>
+            <h1 className="heading"><b>Enter Credentials</b></h1>
 
             <input 
             type="email" 

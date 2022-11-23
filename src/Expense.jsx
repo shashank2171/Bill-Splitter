@@ -2,14 +2,18 @@ import React , { useState } from "react";
 import Header from "./Header";
 import "./index.css";
 import "./Expense.css";
-import { NavLink } from "react-router-dom";
-import { collection, doc, setDoc, getDoc, updateDoc } from "firebase/firestore"; 
+
+import { doc, setDoc, getDoc } from "firebase/firestore"; 
 import {db} from "./firebase"
 import {group, currUser} from "./AddGroups"
+import { useNavigate } from "react-router-dom";
+
+
+let currExpense = null;
 
 const Expense = () =>{
 
-    
+    const navigate = useNavigate();
     const[fullName,setFullName] = useState({
         amount : "",
         description : "",
@@ -33,15 +37,33 @@ const Expense = () =>{
     const onSubmits=async(event)=>{
         event.preventDefault();
 
-        const exp = doc(db,"users", currUser.email, "groups", group, "expenses", fullName.description);
-        await setDoc(exp, {
-            amount: fullName.amount
-        });
+        if(!fullName.amount || !fullName.description){
+            alert("Please enter all values!");
+        }
+        else{
+            let exp = doc(db,"users", currUser.email, "groups", group, "expenses", fullName.description);
+            await setDoc(exp, {
+                amount: fullName.amount
+            });
 
-       
-        console.log(fullName);
-        console.log(group);
-        alert("form Submitted");
+            exp = doc(db,"users", currUser.email, "groups", group);
+            const mem = await getDoc(exp);
+
+            //console.log(mem.get("members"));
+
+            mem.get("members").forEach(async element => {
+                exp = doc(db,"users", element, "groups", group, "expenses", fullName.description);
+                await setDoc(exp, {
+                    amount: fullName.amount
+                });
+                currExpense = fullName.description;
+            });
+
+            
+            // console.log(fullName);
+            // console.log(group);
+            navigate("/Groups/AddGroups/Expense/AddExpense");
+        }
     };
 
     return(
@@ -107,3 +129,4 @@ const Expense = () =>{
     );
 }
 export default Expense;
+export {currExpense};

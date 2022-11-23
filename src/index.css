@@ -4,8 +4,11 @@
     background-color: antiquewhite;
 }
 .active{
-    color : rgb(3, 0, 51);
     font-weight: 800;
+    border :2px solid rgb(0, 0, 0);
+    border-radius : 5px;
+    padding : 2px 5px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.3);;
 }
 
 body{
@@ -25,8 +28,28 @@ body{
     width : 100vw;
     background-color: rgb(255, 189, 45);
 }
+.navList{
+    color :rgb(0, 0, 0);
+    background-color: rgb(255, 189, 45);
+    text-decoration: none;
+}
+/* .navList:hover{
+    color :rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius : 5px;
+    padding : 2px 5px;
+} */
 
-ul{
+.navList6{
+    color :rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* change */
+
+.ulList{
     display: flex;
     flex-direction :row;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -37,14 +60,57 @@ ul{
     background-color: rgb(255, 189, 45);
 }
 
-ul li{
-    
-    text-decoration: none;
+.ulliList{
     margin : 10px 10px;
-    color:brown;
+    color:black;
     padding : 3px 8px;
     background-color: rgb(255, 189, 45);
 }
 
 
+@media screen and (max-width : 480px){
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .navBox{
+         display: block;
+         margin-top: 0%;
+         padding: 0%;
+         /* width: 100%; */
+    }
+
+    .navList{
+        color :rgb(0, 0, 0);
+        background-color: rgb(255, 189, 45);
+        text-decoration: none;
+    }
+
+    .heading1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .ulList{
+        margin-left: 20px;
+        background-color: white;
+        margin-bottom: 40px;
+       
+    }
+    .ulliList{
+        display: flex;
+        justify-content:space-between;
+        background-color: white;
+        /* margin: 10px; */
+        /* padding: 0%; */
+    }
+    
+    .navList6{
+        color :rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+}
 

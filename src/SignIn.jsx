@@ -5,7 +5,7 @@ import "./Expense.css";
 import "./SignIn.css";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import {auth, updateUserDatabase} from "./firebase";
-import { useNavigate } from "react-router-dom"
+import { useNavigate, NavLink } from "react-router-dom"
 
 const SignIn=()=>{
 
@@ -73,10 +73,10 @@ const SignIn=()=>{
         <div className="headS">
             <form onSubmit={onSubmits}>
             <div className="formBox">   
-            <h1 className="heading">Register {fullName.fname} {fullName.lname}</h1>
+            <h1 className="heading"><b>Register Account</b></h1>
             <input 
             type="text" 
-            placeholder=" fName " 
+            placeholder=" First Name " 
             name="fname"
             onChange={inputEvent} 
             value={fullName.fname} 
@@ -84,7 +84,7 @@ const SignIn=()=>{
 
             <input 
             type="text" 
-            placeholder=" lName " 
+            placeholder=" Last Name " 
             name="lname"
             onChange={inputEvent} 
             value={fullName.lname} 
@@ -92,7 +92,7 @@ const SignIn=()=>{
 
             <input 
             type="email" 
-            placeholder=" email " 
+            placeholder=" Email " 
             name="email"
             onChange={inputEvent} 
             value={fullName.email} 
@@ -109,6 +109,7 @@ const SignIn=()=>{
             <div className ="submitBox">
             <button type="submit" className="submitButton">Submit</button>
             </div>
+            <div className="redirectToLogin">Already have an account <NavLink to="/LogIn" className = "navRedirectToLogin">Log In</NavLink></div>
             </div>
             </form>
         </div>

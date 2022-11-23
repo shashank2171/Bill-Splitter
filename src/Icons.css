@@ -1,0 +1,36 @@
+.list0{
+    height : 20vh;
+    width : 15vw;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    padding: 0;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.fullBox2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 189, 45);
+    padding : 10px;
+    height : 25vh;
+    width : 100vw;
+}
+
+.ulIcons{
+    display : flex;
+    justify-content: center;
+    background-color: rgb(255, 189, 45);
+}
+
+.iconsReact{
+    height : 50px;
+    width : 50px;
+    margin : 10px
+}

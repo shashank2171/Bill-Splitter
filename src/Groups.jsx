@@ -4,6 +4,7 @@ import "./index.css";
 import "./groups.css";
 import { NavLink } from "react-router-dom";
 import {auth} from "./firebase"
+import { AiFillPlusCircle } from "react-icons/ai";
 
 const Groups = () =>{
 
@@ -28,8 +29,8 @@ const Groups = () =>{
         <div className="head1">Welcome {userName}</div>
         <div className = "outerBox1">
         <div className="innerBox1">
-        <div className="img">add group icon</div>
-        <button className="btn"><NavLink to="/Groups/AddGroups">Add Group</NavLink></button>
+        <div className="img"><AiFillPlusCircle className = "addGroupIcon"/></div>
+        <button className="btn"><NavLink to="/Groups/AddGroups" className="navList1">Add Group</NavLink></button>
         </div></div>
         <div className="lowerBox"></div>
         </div>

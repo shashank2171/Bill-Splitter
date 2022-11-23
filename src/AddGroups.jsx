@@ -79,7 +79,7 @@ const AddGroups = () =>{
             console.log(members);
         }
         else{
-            alert("user does not exist")
+            alert("User does not exist")
             console.log("does not exist");
         }
     }
