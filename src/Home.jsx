@@ -10,7 +10,7 @@ const Home = () =>{
     <Header/>
     <h2 className="heading2">Bill Splitter helps you split your expenses with your buddies</h2>
     <div className="buttonHead">
-    <a href=" "><button className="button"><NavLink to="/Groups" className = "navList">Get Started</NavLink></button></a>
+    <a href=" "><button className="button"><NavLink to="/Signin" className = "navList">Get Started</NavLink></button></a>
     </div>
     <div className="content">
         <div className = "imageBox">
@@ -25,7 +25,7 @@ const Home = () =>{
         <h2 className="head3">Make groups for simple management</h2>
         <div className="threeOne">
         The frequent issues users have with sharing among themselves gave rise to the idea for creating this application. Maintaining personal spending is a huge concern, and dividing expenses across the group might be perplexing. Before, there were several ways to keep track of expenses, including the use of sticky notes by regular people, spreadsheets for professionals, and ledgers for keeping track of large sums. There are still issues with data consistency, the possibility of missing important inputs, and the potential for human mistake. Data recorders are not always readily available, and getting a comprehensive picture of those charges might be time-consuming.
-        <button className="button2"><NavLink to="/Groups" className = "navList6">Get Started</NavLink></button>
+        <button className="button2"><NavLink to="/Signin" className = "navList6">Get Started</NavLink></button>
         </div>
     </div>
     <div className="newBox"><Icons/></div>
@@ -36,7 +36,7 @@ const Home = () =>{
         <div className="fourTwo">
         <h2 className="head4">Register your friends</h2>
         <p>There is no need to recall the costs.Bill Splitter can record your expenses, share them with your friends, and keep track of your bills.Would you like to split your expenditures with some friends? No problem, establish groups, and distribute it quickly.</p>
-        <button className="button3"><NavLink to="/Groups/AddGroups" className = "navList">Get Started</NavLink></button>
+        <button className="button3"><NavLink to="/Signin" className = "navList">Get Started</NavLink></button>
         </div>
         </div>
     </div>

@@ -46,7 +46,8 @@ const AddExpense = () =>{
         const amount = am.get("amount");
         let members = expenses.get("members");
         console.log(amount);
-        let final = (amount/(amount.length+1)).toFixed(2);
+        console.log(members.length);
+        let final = (amount/(members.length+1)).toFixed(2);
         let list = document.getElementById("mem");
         let li = document.createElement("li");
         li.innerText = "You owe :  ₹ "+final;
