@@ -27,7 +27,7 @@ const Home = () =>{
         The frequent issues users have with sharing among themselves gave rise to the idea for creating this application. Maintaining personal spending is a huge concern, and dividing expenses across the group might be perplexing. Before, there were several ways to keep track of expenses, including the use of sticky notes by regular people, spreadsheets for professionals, and ledgers for keeping track of large sums. There are still issues with data consistency, the possibility of missing important inputs, and the potential for human mistake. Data recorders are not always readily available, and getting a comprehensive picture of those charges might be time-consuming.
         <button className="button2"><NavLink to="/Signin" className = "navList6">Get Started</NavLink></button>
         </div>
-    </div>
+    </div>3
     <div className="newBox"><Icons/></div>
     </div>
     <div className="four">

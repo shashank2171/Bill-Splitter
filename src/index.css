@@ -61,6 +61,7 @@ body{
 }
 
 .ulliList{
+    cursor: pointer;
     margin : 10px 10px;
     color:black;
     padding : 3px 8px;
@@ -100,6 +101,7 @@ body{
        
     }
     .ulliList{
+        cursor: pointer;
         display: flex;
         justify-content:space-between;
         background-color: white;
