@@ -119,3 +119,58 @@
     margin: 3px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media screen and (max-width: 480px) {
+    .head1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        top: 140px;
+        left: 120px;
+        /* margin-right:10px ; */
+    }
+    .outerBox2{
+        display: block;
+        flex-direction: column;
+        height: 600px;
+        margin-top: 140px;
+    }
+    .box1{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left:10px;
+        height: fit-content;
+        width: auto;
+        
+
+    }
+    .box2{
+        display: block;
+        margin-top: 50px;
+        margin-left:20px;
+        height:fit-content;
+        width: 200px;
+    }
+    .box{
+        width: 200px;
+    }
+    .boxDscp
+    {
+        width: 200px;
+        height: 50px;
+    }
+    .addBtn1{
+        position:absolute;
+        top: 930px;
+
+    }
+    .head{
+        height: fit-content;
+    }
+
+    .heading5{
+        margin-left: 40px;
+    }
+}

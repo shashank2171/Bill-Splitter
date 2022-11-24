@@ -84,3 +84,30 @@
     top : 130px;
     left : 20px; */
 }
+
+@media screen and (max-width: 480px) {
+    .outerBox3{
+        display: block;
+        width: 80%;
+        height: 250px;
+        position: relative;
+        bottom : 200px;
+    }
+        .boxE1{
+            display: block;
+            width: 100px;
+            margin-left: 110px;
+            height: 240px;
+             
+        }
+        .formbox{
+            width: 100px;
+        }
+        .addBtn2
+        {
+            margin-left: 0px;
+        }
+        .heading6{
+            display : none;
+        }
+}

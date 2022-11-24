@@ -108,13 +108,18 @@
         justify-content: center;
         align-items: center;
         margin-top: 120px;
+        position : relative;
+        bottom : 230px;
+        
     }
     
     .innerBox1{
          margin-bottom: 40px;
-         width: 300px;
-
-          
+         width: 150px;
+         height: 150px;
+        display : flex;
+        justify-content: center;
+        align-items: center;
     }
     .btn{
          margin-top: 40px;
@@ -128,6 +133,19 @@
          left: 150px;
     }
 
+    .addGroupIcon{
+        position : relative;
+        top : 40px;
+        left : 20px;
+    }
+
+    .img{
+        display : none;
+    }
+
+    .lowerBox{
+        display : none;
+    }
 
 
     

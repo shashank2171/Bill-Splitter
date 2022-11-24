@@ -219,3 +219,109 @@ margin : 20px 0px 10px 10px;
 }
 
 
+@media screen and (max-width: 480px){
+  *{
+    margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+  }
+  
+  .heading2{
+    display: block;
+    margin-top: 80px;
+    /* padding-top: 100px; */
+    text-align: center;
+  }
+
+  .button{
+    height : 50px;
+    width : 130px;
+   }
+
+   .content{
+    display :block;
+    height: 500px;
+    display : flex;
+    justify-content : center;
+    align-items: center; 
+  }
+  .image1{
+    height :200px;
+    width : auto;
+    margin-bottom: 10px;
+  }
+  
+  .imageBox{
+    height:auto;
+    width: auto;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .para{
+    margin-top :30px;
+    margin-left: 20px;
+    
+  }
+
+  .three{
+     display: block;
+     justify-content: center;
+     align-items: center;
+     }
+     .threeOne{
+      display : none;
+      /* flex-direction: column;
+      justify-content: center;
+      text-align: center;
+       margin-top: 50px; */
+    }
+    .fourOne{
+      display : none;
+    }
+    .head3{
+      text-align: center;}
+      .button2{
+        margin-top: 50px;
+        width: 120px;
+        margin-left:50px;
+      }
+      .threeBox{
+        height: 530px;
+      }
+
+      .four{
+        display: block;
+        padding: 0px;
+      }
+      .fourOne{
+        display: block;
+        margin-top: 10px;
+      }
+      .fourtwo{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+      }
+      .image3{
+        /* height: auto;
+        width: 220px; */
+        display: none;
+        /* justify-content: center;
+        align-items: center;
+        position : absolute;
+        top : 1110px; */
+      }
+      .button3{
+        margin-top: 30px;
+        
+      }
+
+      .list0{
+        height : 120px;
+        width : 100px;
+      }
+}
