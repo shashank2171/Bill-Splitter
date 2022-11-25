@@ -83,6 +83,7 @@
 .lowerBox{
     height : 35vh;
     width : 90vw;
+    font-size: 1rem;
     display: flex;
     border : 5px solid rgb(252, 227, 195);
     border-radius: 10px;
