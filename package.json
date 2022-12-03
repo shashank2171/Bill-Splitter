@@ -2,7 +2,7 @@
   "name": "bill",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://shashank2171.github.io/Bill-Splitter/src/index.js",
+  "homepage": "http://shashank2171.github.io/Bill-Splitter",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
